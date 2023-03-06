@@ -1,0 +1,5 @@
+---
+- name: "END PLAYBOOK IF TYPE NONE"
+  debug:
+    msg: "Type selected NONE, ending Playbook"
+- meta: end_play
