@@ -9,7 +9,7 @@ This role to updates the linux system ( Redhat or Centos ) as follows:
 
 
 There are 2 Patching_type you can use:  
-  - NOREBOOT
+  - SIMPLE
   - KERNEL (FULL )
 
 Role Variables
@@ -23,8 +23,8 @@ supported_distros:
 local_dir is a directory where to store the logs during the playbooks is running. Default: /tmp/ansible/sys-patching:  
 local_dir: "/tmp/ansible/sys-patching"  
 
-Patching_type: KERNEL --> Full patch with reboot , NOREBOOT . Default: KERNEL:  
-Patching_type:  KERNEL  
+Patching_type: KERNEL --> Full patch with reboot , SIMPLE . Default: SIMPLE:  
+Patching_type:  SIMPLE
 
 Requirements
 ------------
@@ -93,6 +93,6 @@ BSD
 Author Information
 ------------------
 
-For Help Contact me : **Ahmed Hagag**
+For Help Contact me : **Mohammad Bangee**
 
-     ahmed.thagag@gmail.com
+     mohammad.bangee@ivolve.io
