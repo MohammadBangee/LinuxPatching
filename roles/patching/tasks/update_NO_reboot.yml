@@ -40,7 +40,7 @@
 #          Check if Redhat sunscription is Valid            #
 #############################################################
 - name: "Check the Redhat subscription status is valid"
-  shell:  subscription-manager status |  grep "Status:" | awk '{print $NF}'
+  shell: subscription-manager status | grep "Status:" | awk 'NR==1{print $NF}'  
   changed_when: false
   when: ansible_distribution == "RedHat"
   register: echo_results
